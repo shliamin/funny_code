@@ -1,0 +1,13 @@
+puts 'Give me an integer number!'
+
+if gets.chomp.to_i < 0
+	puts "The number should be bigger than 0!"
+elsif gets.chomp.to_i > 2
+	puts "Factorial is #{ (2..gets.chomp.to_i).inject { |mult, n| mult * n } }"
+else gets.chomp.to_i < 3
+	if gets.chomp.to_i < 2
+		puts "Factorial is 1"
+	else
+		puts "Factorial is 2"
+	end
+end
